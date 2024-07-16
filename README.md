@@ -4,6 +4,9 @@
 * Docker Compose で JupyterLab をお手軽に構築
 * 日本語化など好みの設定をデフォルトに
 
+※以下は Python に関する自分のナレッジベース (使えるものもあるかも？)  
+　[Tobotobo/my_knowledge_base/labels/Python](https://github.com/Tobotobo/my_knowledge_base/labels/Python)
+
 ## 起動
 * `docker compose up` ※自分の環境に合わせて
 * `http://localhost:8889` ※自分の環境に合わせて
