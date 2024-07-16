@@ -1,0 +1,11 @@
+{
+    "defaultSeverity": "Warning",
+    "gutter": false,
+    "debounceDelay": 250,
+    "ignoreCodes": [
+        "E303"
+    ],
+    "ignoreMessagesPatterns": [],
+    "ignoreSeverities": [],
+    "disable": false
+}
