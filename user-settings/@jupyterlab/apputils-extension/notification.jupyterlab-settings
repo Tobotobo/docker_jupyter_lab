@@ -4,7 +4,15 @@
     // 通知設定
     // *******************************************
 
+    // JupyterLab の更新を確認する
+    // Whether to check for newer version of JupyterLab or not. It requires `fetchNews` to be `true` to be active. If `true`, it will make a request to a website.
+    "checkForUpdates": false,
+
+    // 通知オフにする
+    // `true` の場合、トースト通知は自動的に表示されません。
+    "doNotDisturbMode": false,
+
     // Jupyter公式ニュースを取得
-    // Jupyter news feedからニュースを取得するかどうか。`true` の場合、ウェブサイトにリクエストを送信>
+    // Jupyter news feedからニュースを取得するかどうか。`true` の場合、ウェブサイトにリクエストを送信します。
     "fetchNews": "false"
 }

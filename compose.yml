@@ -1,16 +1,26 @@
 services:
-    jupyter:
-      build:
-        context: .
-        dockerfile: Dockerfile
-        args:
-          VARIANT: lab-4.2.3
-      ports:
-        - 8889:8888
-      volumes:
-        - jupyter-home:/home
-        - ./examples:/home/jovyan/examples
-      command: start-notebook.py --NotebookApp.token='my-token'
-  
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VARIANT: lab-4.2.3
+    ports:
+      - 8889:8888
+    volumes:
+      - jupyter-home:/home
+      - ./examples:/home/jovyan/examples
+    command: start-notebook.py --NotebookApp.token='my-token'
+
+  postgres:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
 volumes:
   jupyter-home:
+  postgres_data:
